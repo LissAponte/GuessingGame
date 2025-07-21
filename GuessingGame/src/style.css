@@ -1,0 +1,41 @@
+body {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: cadetblue;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input [ type="number"] {
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid lightseagreen;
+    width: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: dodgerblue;
+}
+
+#FeedBack\! {
+    margin-top: 10px;
+    font-weight: bold;
+}

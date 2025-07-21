@@ -7,9 +7,18 @@
 
 
     <title>Guessing Game</title>
-
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="container">
+    <h1>Guess the Number!</h1>
+    <p>Choose a number between **1** and **100**</p>
+    <input type="number" id="guessInput" min="1" max="100">
+    <button onclick="checkGuess()">Guess!</button>
+    <p id="FeedBack!"></p>
+</div>
+<script src="guessingGame.js"></script>
 
 </body>
 </html>
