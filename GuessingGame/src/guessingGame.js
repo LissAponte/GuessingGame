@@ -19,10 +19,18 @@ let hScore = 0;
 
 checkGuessEL.addEventListener('click',()=>{
     const guess = Number(inputNumEL.value);
+if(guess > answer) {
+    messageEL.textContent = "Number is too high! You've lost :<"
+    scoreEL.textContent = 0
+} else if (guess < answer) {
+    messageEL.textContent = "Number is too low! You've lost :<"
+    scoreEL.textContent = 0
 
-    if(guess){
+} else if (guess === answer) {
+    messageEL.textContent = "Correct! You win! :3"
+} else {
+    messageEL.textContent = "Please enter a number<3"
+}
 
-    }else{
-        messageEL.textContent = "Please enter a number. :<"
-    }
+
 })
