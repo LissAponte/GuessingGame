@@ -3,7 +3,7 @@ console.log("The answer is: " + randomNum);
 let numberOfGuesses = 0;
 
 function checkGuess(){
-    const guessInput = document.getElementbyId("guessInput");
+    const guessInput = document.getElementById("guessInput");
     const feedBack = document.getElementById("FeedBack!");
     const guess = document.getElementById(guessInput.value);
 
