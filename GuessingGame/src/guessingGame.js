@@ -1,16 +1,28 @@
 "use strict";
 
 //region Const
-const container = document.getElementById(".container");
-const playAgain = document.getElementById(".play-again");
-const checkGuess = document.getElementById(".check-button");
-const hideNum = document.getElementById(".hide-num");
-const message = document.getElementById(".started-message");
-const inputNum = document.getElementById(".input-number");
-const hScore = document.getElementById(".h-score");
-const score = document.getElementById(".score");
+const containerEL = document.getElementById(".container");
+const playAgainEL = document.getElementById(".play-again");
+const checkGuessEL = document.getElementById(".check-button");
+const hideNumEL = document.getElementById(".hide-num");
+const messageEL = document.getElementById(".started-message");
+const inputNumEL = document.getElementById(".input-number");
+const hScoreEL = document.getElementById(".h-score");
+const scoreEL = document.getElementById(".score");
 
 //endregion
 
 let answer = Math.random() * 100 + 1;
-console.log(answer);
+let score = 20;
+let hScore = 0;
+
+
+checkGuessEL.addEventListener('click',()=>{
+    const guess = Number(inputNumEL.value);
+
+    if(guess){
+
+    }else{
+        messageEL.textContent = "Please enter a number. :<"
+    }
+})
