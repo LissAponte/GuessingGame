@@ -8,6 +8,10 @@ function checkGuess(){
     const guess = document.getElementById(guessInput.value);
 
     numberOfGuesses++;
+document.getElementById('button').addEventListener('click', evt => {
+    let data = document.getElementById('guessInput').value;
+});
+document.getElementById('guessInput').value = "";
 
     if (isNaN(guess) || guess < 1 || guess > 100) {
         feedback.textContent = "Invalid input. Please enter a  number between 1 and 100.";
@@ -20,3 +24,4 @@ function checkGuess(){
         guessInput.disabled = true;
     }
 }
+
