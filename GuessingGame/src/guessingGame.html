@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <meta name="description" content="Liss Aponte">
-
-
-    <title>Guessing Game</title>
 <link rel="stylesheet" href="style.css">
+
+
+
+    <title>Number Guessing Game!</title>
+
 </head>
 <body>
-
 <div class="container">
-    <h1>Guess the Number!</h1>
-    <p>Choose a number between **1** and **100**</p>
-    <label for="guessInput"></label><input type="number" id="guessInput" min="1" max="100">
-    <button id="button" onclick="checkGuess()">Guess!</button>
+    <div class="container_wrapper">
+        <button class="play-again">Play again?</button>
+        <p>Between 1 and 100!</p>
+    </div>
+    <h1>Guess a number!!!</h1>
+    <p class="hide-num">?</p>
+    <p class="starter-message">Start Game?</p>
 
-
-    <p id="FeedBack!"></p>
-
-
-    
+    <div class="number-data">
+        <section>
+            <input type="number" placeholder="Enter your guess!" class="input-number">
+            <button class="check-button">Check answer!</button>
+        </section>
+        <div class="content">
+            <p>Score: <span class="score">20</span></p>
+            <p>High Score: <span class="h-score">20</span></p>
+        </div>
+    </div>
 </div>
-<script src="guessingGame.js"></script>
-
 </body>
 </html>
