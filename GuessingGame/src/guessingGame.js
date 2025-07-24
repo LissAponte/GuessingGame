@@ -15,15 +15,14 @@ let answer = Math.random() * 100 + 1;
 let score = 20;
 let hScore = 0;
 
-console.log(answer);
 
 checkGuessEL.addEventListener('click',function(){
     const guess = Number(inputNumEL.value);
 if(guess > answer) {
-    messageEL.textContent = "Number is too high! You've lost :<"
+    displayMessage("Number is too high! You've lost :<");
     scoreEL.textContent = 0
 } else if (guess < answer) {
-    messageEL.textContent = "Number is too low! You've lost :<"
+    displayMessage( "Number is too low! You've lost :<");
     scoreEL.textContent = 0
 
 } else if (guess === answer) {
@@ -31,10 +30,13 @@ if(guess > answer) {
     hideNumEL.style.width = "50%";
     hideNumEL.style.transition = "aLL 0.3 ease in";
 
-    messageEL.textContent = "Correct! You win! :3"
+   displayMessage( "Correct! You win! :3");
 } else {
-    messageEL.textContent = "Please enter a number<3"
+    displayMessage("Please enter a number<3");
 }
 
+});
 
-})
+ const displayMessage = function(message) {
+    messageEL.textContent = message;
+ };
