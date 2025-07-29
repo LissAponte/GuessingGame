@@ -31,7 +31,7 @@ if(guess > answer) {
     hideNumEL.style.width = "50%";
     hideNumEL.style.transition = "aLL 0.3 ease in";
 hScoreEL.textContent = document.getElementById("h-score") + 5;
-Scor
+
    displayMessage( "Correct! You win! :3");
 } else {
     displayMessage("Please enter a number<3");
